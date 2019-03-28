@@ -21,18 +21,28 @@
 
 * git branch // 查看本地分支
 * git branch -r // 查看远程分支
+* git branch -a // 查看远程和本地所有分支
 * git branch [name] // 创建分支
 * git checkout [name] // 切换分支
 * git checkout -b [name] // 创建分子并切换到当前分支
-* // 创建分支，切换到当前分支和关联远程分支
 * git branch -d [name] // 删除分支 -d 删除已经参与了合并的分支，未合并无法删除 -D 强制删除 
 * git merge [name] // 与当前分支合并
+
+#### 关联分支
+
+* git fetch // 更新远程代码到本地仓库
+* git checkout -b [name] origin/[name] // 创建分支，切换到当前分支和关联远程分支(拉取远程分支并创建本地分支)
+* git branch --set-upstream [name] origin/[name] // 分支追踪远程分支
+* git branch -u origin/[name] // 设置当前分支跟踪远程分支origin/serverfix
+* git branch -vv // 查看本地分支和远程分支的跟踪关系
 * git push origin [name] // 本地分支推到远程
 * git push origin [name]:master // 本地分支推送到master分支和创建远程分支
 ** git push origin [name]:[name] // 提交本地test分支作为远程的test分支
 ** git push origin test:test  // 提交本地test分支作为远程的test分支
 ** git push origin :test // 删除远程分支 本地会存储
+
 #### 版本操作
+
 * git tag // 查看版本
 * git tag [name] // 创建版本
 * git tag -d [name] // 删除版本
@@ -43,6 +53,7 @@
 #### .gitignore 文件忽略 每个元素占一行
 
 ## 常见问题处理
+
 * 此项错误是由于本地仓库和远程有不同的开始点，也就是两个仓库没有共同的 commit 出现的无法提交。这里我们需要用到 
 --allow-unrelated-histories。也就是我们的 pull 命令改为下面这样的：git pull origin master --allow-unrelated-histories1
 * 如果设置了默认分支，可以这样写 git pull --allow-unrelated-histories
