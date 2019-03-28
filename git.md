@@ -32,6 +32,7 @@
 ** git push origin [name]:[name] // 提交本地test分支作为远程的test分支
 ** git push origin test:test  // 提交本地test分支作为远程的test分支
 ** git push origin :test // 删除远程分支 本地会存储
+#### 版本操作
 * git tag // 查看版本
 * git tag [name] // 创建版本
 * git tag -d [name] // 删除版本
