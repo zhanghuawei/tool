@@ -12,38 +12,24 @@
 * git pull [remoteName] [localBranchName] // 取远程仓库
 * git push [remoteName] [localBranchName] // 推送远程仓库
 #### 操作分支
-* git branch // 
-* t branch
+* git branch // 查看本地分支
+* git branch -r // 查看远程分支
+* git branch [name] // 创建分支
+* git checkout [name] // 切换分支
+* git checkout -b [name] // 创建分子并切换到当前分支
+* // 创建分支，切换到当前分支和关联远程分支
+* git branch -d [name] // 删除分支 -d 删除已经参与了合并的分支，未合并无法删除 -D 强制删除 
+* git merge [name] // 与当前分支合并
+* git push origin [name] // 本地分支推到远程
+* git push origin [name]:mater // 本地分支推送到master分支
+* * * git push origin test:master // 提交本地test分支作为远程的master分支，远程的github就会自动创建一个test分支
+* * * git push origin test:test  // 提交本地test分支作为远程的test分支
+
 *
-*
-*
-*
-*
-*
-*
-*
-*
-*
-查看本地分支：$ 
-查看远程分支：$ git branch -r
-创建本地分支：$ git branch [name] ----注意新分支创建后不会自动切换为当前分支
-切换分支：$ git checkout [name]
-## GitLab常用命令整理
-1.远程仓库相关命令
-检出仓库：$ git clone git://github.com/jquery/jquery.git
-查看远程仓库：$ git remote -v
-添加远程仓库：$ git remote add [name] [url]
-删除远程仓库：$ git remote rm [name]
-修改远程仓库：$ git remote set-url --push[name][newUrl]
-拉取远程仓库：$ git pull [remoteName] [localBranchName]
-推送远程仓库：$ git push [remoteName] [localBranchName]
+
+
  
-2.分支(branch)操作相关命令
-查看本地分支：$ git branch
-查看远程分支：$ git branch -r
-创建本地分支：$ git branch [name] ----注意新分支创建后不会自动切换为当前分支
-切换分支：$ git checkout [name]
-创建新分支并立即切换到新分支：$ git checkout -b [name]
+
 删除分支：$ git branch -d [name] ---- -d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D选项
 合并分支：$ git merge [name] ----将名称为[name]的分支与当前分支合并
 创建远程分支(本地分支push到远程)：$ git push origin [name]
