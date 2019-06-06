@@ -54,8 +54,11 @@
 #### 恢复操作
 * git log // 查看历史版本
   -- 如果commit的内容过多的话，我们可以进行过滤查找：
+    - git log --pretty=oneline 调出所有commit记录
     - git log -g --author="xx@qq.com"   // 根据用户名过滤，模糊匹配
     - git log -g --grep "xx"  // 根据commit时候的提交信息查找，模糊匹配
+* git reflog 调出所有在HEAD上的记录 
+* git fsck --full找出没有被指向的记录.找出相应SHA值.
 * git reset --hard commit_id 回到这个版本
 #### OTHER
 
