@@ -37,9 +37,9 @@
 * git branch -vv // 查看本地分支和远程分支的跟踪关系
 * git push origin [name] // 本地分支推到远程
 * git push origin [name]:master // 本地分支推送到master分支和创建远程分支
-** git push origin [name]:[name] // 提交本地test分支作为远程的test分支
-** git push origin test:test  // 提交本地test分支作为远程的test分支
-** git push origin :test // 删除远程分支 本地会存储
+* git push origin [name]:[name] // 提交本地test分支作为远程的test分支
+* git push origin test:test  // 提交本地test分支作为远程的test分支
+* git push origin :test // 删除远程分支 本地会存储
 
 #### 版本操作
 
@@ -51,13 +51,17 @@
 * git push origin :refs/tags/[name] // 删除远程版本
 
 #### .gitignore 文件忽略 每个元素占一行
-
+#### 恢复操作
+* git log // 查看历史版本
+  -- 如果commit的内容过多的话，我们可以进行过滤查找：
+    - git log -g --author="xx@qq.com"   // 根据用户名过滤，模糊匹配
+    - git log -g --grep "xx"  // 根据commit时候的提交信息查找，模糊匹配
+* git reset --hard commit_id 回到这个版本
 #### OTHER
 
 * git init // 初始化仓库
 * git status // 查看变化
-* git log // 查看历史版本
-* git reset --hard commit_id 回到这个版本
+
 * git diff // 查看工作区和暂存区中的文件区别
 * git diff --cached 比较的是暂存区和版本库的差别
 * git diff HEAD 可以查看工作区和版本库的差别
