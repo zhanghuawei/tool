@@ -7,6 +7,14 @@
 * git push origin master // 从暂存区提交到远程 master主分支 换成分支提到当前分支（或把本地分支push到远程）
 * git pull origin master // 拉去 换成分支拉去分支
 
+##### 远程仓库和本地仓库建立连接
+* 本地有现成的项目，需要关联远程仓库或者提交到github
+* git init 
+* git add -A
+* git commit -m '提交说明'
+* git remote add origin [url] // 仓库地址
+* git push -u origin master // 正常提交不用带 -u
+
 ##### 操作远程仓库
 
 * git clone https://github.com/zhanghuawei/tool.git // 克隆仓库
