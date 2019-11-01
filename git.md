@@ -7,7 +7,7 @@
 * git push origin master // 从暂存区提交到远程 master主分支 换成分支提到当前分支（或把本地分支push到远程）
 * git pull origin master // 拉去 换成分支拉去分支
 
-##### 远程仓库和本地仓库建立连接
+##### 本地仓库和远程仓库建立连接
 * 本地有现成的项目，需要关联远程仓库或者提交到github
 * git init 
 * git add -A
@@ -33,13 +33,13 @@
 * git branch [name] // 创建分支
 * git checkout [name] // 切换分支
 * git checkout -b [name] // 创建分子并切换到当前分支
+* git checkout -b [name] origin/[name] // 拉去远程分支到本地分支
 * git branch -d [name] // 删除分支 -d 删除已经参与了合并的分支，未合并无法删除 -D 强制删除 
 * git merge [name] // 与当前分支合并
 
 #### 关联分支
 
 * git fetch // 更新远程代码到本地仓库
-* git checkout -b [name] origin/[name] // 创建分支，切换到当前分支和关联远程分支(拉取远程分支并创建本地分支)
 * git branch --set-upstream [name] origin/[name] // 分支追踪远程分支
 * git branch -u origin/[name] // 设置当前分支跟踪远程分支origin/serverfix
 * git branch -vv // 查看本地分支和远程分支的跟踪关系
