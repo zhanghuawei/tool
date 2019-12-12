@@ -28,7 +28,7 @@
 
         </dict>
 
-  <!--      <dict>
+       <dict>
 
             <key>kind</key>
 
@@ -40,11 +40,11 @@
 
             <key>url</key>
 
-            <string>https://test.company.com.cn/m/abc/test-512.png</string> //在itunes上点事的图片路径
+            <string>https://xhuawei.com/tool/imgs/saoma.png</string> //在itunes上点事的图片路径
 
-        </dict> -->
+        </dict>
 
-     <!--   <dict>
+       <dict>
 
             <key>kind</key>
 
@@ -56,9 +56,9 @@
 
             <key>url</key>
 
-            <string>https://test.company.com.cn/m/moa/test-57.png</string> // 安装应用显示的图片
+            <string>https://xhuawei.com/tool/imgs/saoma.png</string> // 安装应用显示的图片
 
-        </dict> -->
+        </dict>
 
     </array>
 
@@ -67,7 +67,7 @@
         <dict>
             <key>update-url</key>
 
-            <string>https://test.company.com.me/iosLocal.plist</string> // 版本更新URL
+            <string>https://xhuawei.com/tool/info.plist</string> // 版本更新URL
 
             <key>bundle-identifier</key>
 
@@ -75,15 +75,15 @@
 
             <key>bundle-version</key>
 
-            <string>3.0.3</string> // 用用版本号
+            <string>4.0</string> // 用用版本号
 
             <key>kind</key>
 
             <string>software</string>
 
-            <key>title</key>
+            <key>发那科</key>
 
-            <string>ipa包部署测试</string> // 安装应用显示的名称
+            <string>F+IoT</string> // 安装应用显示的名称
 
         </dict>
 
