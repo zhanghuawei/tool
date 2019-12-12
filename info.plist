@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+
+<dict>
+
+<key>items</key>
+
+<array>
+
+    <dict>
+
+    <key>assets</key>
+
+    <array>
+
+        <dict>
+
+            <key>F+IoT</key>
+
+            <string>com.bj-fanuc.FIoT</string>
+
+            <key>url</key>
+
+            <string>http://192.168.15.180/__UNI__308101B_1211163809.ipa</string> // 软件安装包,安装包所在的服务器路径
+
+        </dict>
+
+  <!--      <dict>
+
+            <key>kind</key>
+
+            <string>full-size-image</string>
+
+            <key>needs-shine</key>
+
+            <false/>
+
+            <key>url</key>
+
+            <string>https://test.company.com.cn/m/abc/test-512.png</string> //在itunes上点事的图片路径
+
+        </dict> -->
+
+     <!--   <dict>
+
+            <key>kind</key>
+
+            <string>display-image</string>
+
+            <key>needs-shine</key>
+
+            <false/>
+
+            <key>url</key>
+
+            <string>https://test.company.com.cn/m/moa/test-57.png</string> // 安装应用显示的图片
+
+        </dict> -->
+
+    </array>
+
+        <key>metadata</key>
+
+        <dict>
+            <key>update-url</key>
+
+            <string>https://test.company.com.me/iosLocal.plist</string> // 版本更新URL
+
+            <key>bundle-identifier</key>
+
+            <string>com.zte.test</string> // 应用bundle-identifier
+
+            <key>bundle-version</key>
+
+            <string>3.0.3</string> // 用用版本号
+
+            <key>kind</key>
+
+            <string>software</string>
+
+            <key>title</key>
+
+            <string>ipa包部署测试</string> // 安装应用显示的名称
+
+        </dict>
+
+    </dict>
+
+</array>
+
+</dict>
+
+</plist>
