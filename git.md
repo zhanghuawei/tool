@@ -40,7 +40,8 @@
 #### 关联分支
 
 * git fetch // 更新远程代码到本地仓库
-* git branch --set-upstream [name] origin/[name] // 分支追踪远程分支
+* git branch --set-upstream [name] origin/[name] // 分支追踪远程分支（）
+* git branch --set-upstream-to=origin/<remote_branch> <your_branch> // 分支追踪远程分支
 * git branch -u origin/[name] // 设置当前分支跟踪远程分支origin/serverfix
 * git branch -vv // 查看本地分支和远程分支的跟踪关系
 * git push origin [name] // 本地分支推到远程
