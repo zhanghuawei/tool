@@ -92,5 +92,5 @@
 ## 常见问题处理
 
 * 此项错误是由于本地仓库和远程有不同的开始点，也就是两个仓库没有共同的 commit 出现的无法提交。这里我们需要用到 
---allow-unrelated-histories。也就是我们的 pull 命令改为下面这样的：git pull origin master --allow-unrelated-histories1
+--allow-unrelated-histories。也就是我们的 pull 命令改为下面这样的：git pull origin master --allow-unrelated-histories
 * 如果设置了默认分支，可以这样写 git pull --allow-unrelated-histories
