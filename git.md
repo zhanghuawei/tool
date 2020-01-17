@@ -4,6 +4,7 @@
 
 * git add -A // 暂存缓存区
 * git commit -m '提交说明'
+* git reset --soft HEAD^ 撤回刚commit的内容
 * git push origin master // 从暂存区提交到远程 master主分支 换成分支提到当前分支（或把本地分支push到远程）
 * git pull origin master // 拉去 换成分支拉去分支
 
