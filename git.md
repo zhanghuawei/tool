@@ -19,6 +19,7 @@
 ##### 操作远程仓库
 
 * git clone https://github.com/zhanghuawei/tool.git // 克隆仓库
+* git clone -b [分支名称] https://github.com/zhanghuawei/tool.git // 拉去远程分支，master分支可以直接切换
 * git remote -v  // 查看远程仓库
 * git remote add [name] [url] // 添加远程仓库
 * git remote rm [name] // 删除远程仓库
