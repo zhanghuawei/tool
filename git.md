@@ -79,6 +79,7 @@
 * git diff // 查看工作区和暂存区中的文件区别
 * git diff --cached 比较的是暂存区和版本库的差别
 * git diff HEAD 可以查看工作区和版本库的差别
+* git push origin master --force 本地代码覆盖远程 慎用 
 
 
 
