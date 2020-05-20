@@ -15,6 +15,8 @@
 * git commit -m '提交说明'
 * git remote add origin [url] // 仓库地址
 * git push -u origin master // 正常提交不用带 -u
+* git pull --rebase origin master 如果远程有readme.md 本地没有执行
+* git pull origin master --allow-unrelated-histories 同上
 
 ##### 操作远程仓库
 
