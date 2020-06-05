@@ -40,6 +40,7 @@
 * git checkout -b [name] origin/[name] // 拉去远程分支到本地分支
 * git branch -d [name] // 删除分支 -d 删除已经参与了合并的分支，未合并无法删除 -D 强制删除 
 * git merge [name] // 与当前分支合并
+* git merge origin/dev 合并其他分支或者他人创建的分支
 
 #### 关联分支
 
