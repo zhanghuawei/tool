@@ -64,6 +64,12 @@
 * git push origin [name] // 创建远程版本
 * git push origin :refs/tags/[name] // 删除远程版本
 
+#### 合并其他分支commit代码 dev和test 当前test分支
+* git pull origin test 
+* git log --oneline dev // 查看commit提交的记录和hash 例：b9d5a75f
+* git cherry-pick b9d5a75f 
+* git push origin test
+
 #### .gitignore 文件忽略 每个元素占一行
 #### 恢复操作
 * git log // 查看历史版本
